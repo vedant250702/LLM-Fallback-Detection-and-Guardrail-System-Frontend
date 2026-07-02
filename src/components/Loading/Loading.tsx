@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Loading.css"
 import { BiAnalyse } from "react-icons/bi";
-const Loading = () => {
+const Loading:React.FC = () => {
   return (
     <div className='loading-main'>
         <span className='loading-icon'>
