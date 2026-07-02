@@ -1,9 +1,8 @@
-import { DetectionData } from "../../types/DetectionData";
 import "./DetectionPanel.css";
 import { BiAnalyse } from "react-icons/bi";
 import { useDispatch } from "react-redux";
 import { FaWindowClose } from "react-icons/fa";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useSelector } from "react-redux";
 import Loading from "../../components/Loading/Loading";
 

@@ -2,10 +2,7 @@ import { NavLink, useMatch } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import {
   FaHome,
-  FaComment,
   FaInfoCircle,
-  FaClock,
-  FaCog,
 } from "react-icons/fa";
 import "./DrawerPanel.css";
 import { IoMdCloseCircle } from "react-icons/io";

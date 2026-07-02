@@ -1,9 +1,8 @@
-import { useState } from "react";
 import ChatPanel from "./pages/ChatPanel/ChatPanel";
 import DetectionPanel from "./pages/DetectionPanel/DetectionPanel";
 import DrawerPanel from "./pages/DrawerPanel/DrawerPanel";
 import "./App.css";
-import { useSelector, UseSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 
