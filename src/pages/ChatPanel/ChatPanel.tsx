@@ -67,12 +67,13 @@ const ChatPanel:React.FC = () => {
         <div className='chat-panel-header-section'>
           <HeadingDrawerIcon/>
           <HeadingText/>
+
           <div className='chat-panel-header-right-corner'>
             <AnalysisDrawerIcon/>
           </div>
 
         </div>
-
+        
 
         {/* MESSAGE SECTION WHERE ALL THE MESSAGES WILL BE APPENDED */}
         <div className='chat-panel-message-section'>

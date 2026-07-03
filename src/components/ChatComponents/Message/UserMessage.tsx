@@ -8,11 +8,15 @@ const UserMessage:React.FC<MessageType>=({message})=>{
   const [copied, setCopied] = useState(false);
 
 
-  const handleCopy = () => {
-    navigator.clipboard.writeText(message);
+const handleCopy = async () => {
+  try {
+    await navigator.clipboard.writeText(message);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
-  };
+  } catch (err) {
+    console.error("Copy failed:", err);
+  }
+};
 
 
   return(
