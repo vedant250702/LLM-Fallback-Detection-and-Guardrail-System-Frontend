@@ -67,7 +67,7 @@ const ChatPanel:React.FC = () => {
         <div className='chat-panel-header-section'>
           <HeadingDrawerIcon/>
           <HeadingText/>
-
+          {/* <b style={{zIndex: 6 }}>{selector.turn_rank[selector.turn_rank.length-1]}</b> */}
           <div className='chat-panel-header-right-corner'>
             <AnalysisDrawerIcon/>
           </div>

@@ -52,7 +52,7 @@ const SystemMessage:React.FC<MessageType>=({message,turn_rank})=>{
 
           await axios.post(import.meta.env.VITE_APP_BASEURL+"/api/query/llm_analysis",data)
           .then((response)=>{
-              let payload={reason:response.data.reason,  turn_rank:turn_rank, steps:response.data.steps, llm_label:response.data.llm_label}
+              let payload={reason:response.data.reason,  turn_rank:turn_rank, steps:response.data.steps, llm_label:response.data.llm_label, context_short:response.data.context_short}
               dispatch({type:'add analysis information',payload:payload})
               dispatch({type:"toggle analysis loading",payload:false})
           })

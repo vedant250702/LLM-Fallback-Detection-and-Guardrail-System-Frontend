@@ -3,7 +3,8 @@
 interface AnalysisItems{
     reason:string,
     steps:string,
-    llm_label:string
+    llm_label:string,
+    context_short:string
 }
 interface AnalysisTypes{
     collection:{[key:string]:AnalysisItems},
@@ -16,7 +17,8 @@ interface actionTypes{
         reason:string,
         turn_rank:string,
         steps:string,
-        llm_label:string
+        llm_label:string,
+        context_short:string
     }
 }
 
@@ -26,7 +28,7 @@ const AnalysisReducer=(state:AnalysisTypes=initialState,action:actionTypes)=>{
 
     switch(action.type){
         case 'add analysis information':
-            state={...state,collection:{...state.collection,[String(action.payload.turn_rank)]:{reason:action.payload.reason,steps:action.payload.steps,llm_label:action.payload.llm_label}}}
+            state={...state,collection:{...state.collection,[String(action.payload.turn_rank)]:{reason:action.payload.reason,steps:action.payload.steps,llm_label:action.payload.llm_label,context_short:action.payload.context_short}}}
             return state
         case 'current turn_rank':
             console.log(state)

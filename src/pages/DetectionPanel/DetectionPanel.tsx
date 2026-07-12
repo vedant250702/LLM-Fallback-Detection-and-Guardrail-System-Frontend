@@ -17,7 +17,7 @@ export default function DetectionPanel() {
 
 
   useEffect(()=>{
-
+    console.log(chat_selector.collection)
   },[])
 
 
@@ -44,7 +44,7 @@ export default function DetectionPanel() {
               {!navigation_selector.analysis_loading?
                 <>
                   {/* 4. Retrieved Context */}
-                  {/* <InfoBlock label="📄 Retrieved Context" text={chat_selector.context[Number(analysis_selector.analysis_turn_rank_number)-1]} /> */}
+                  <InfoBlock label="📄 Retrieved Context" text={analysis_selector.collection[String(parseInt(analysis_selector.analysis_turn_rank_number))].context_short} />
 
                   {/* 5. LLM Label */}
                   <InfoBlock label="LLM Judge Label" text={String(analysis_selector.collection[String(parseInt(analysis_selector.analysis_turn_rank_number))].llm_label).toUpperCase()} />
