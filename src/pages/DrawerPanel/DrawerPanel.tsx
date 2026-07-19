@@ -41,7 +41,7 @@ const DrawerBrand = () => {
   <div className="drawer-brand">
     <span className="drawer-brand-icon">◈</span>
     <div className="drawer-brand-text">
-      <span className="drawer-brand-name">RAG Suite</span>
+      <span className="drawer-brand-name">FALLBACK DETECTION</span>
       <span className="drawer-brand-sub">Navigation</span>
     </div>
     <div className="drawer-close-button" onClick={()=>{dispatch({type:"toggle drawer panel"})}}>

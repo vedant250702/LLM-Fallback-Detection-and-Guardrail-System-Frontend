@@ -4,6 +4,7 @@ import DrawerPanel from "./pages/DrawerPanel/DrawerPanel";
 import "./App.css";
 import { useSelector } from "react-redux";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import About from "./pages/About/About";
 
 
 const MainApp=()=>{
@@ -36,6 +37,7 @@ export default function App() {
     <Router>
       <Routes>
         <Route path="/" element={<MainApp/>}/>
+        <Route path="/about" element={<About/>}/>
       </Routes>
     </Router>
     </>
