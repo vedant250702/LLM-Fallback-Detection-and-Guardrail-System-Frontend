@@ -199,6 +199,8 @@ export default function About() {
         </p>
       </section>
 
+    <div className="about-divider" />
+
       <section className="about-section">
         <span className="about-section-label">Why It Matters</span>
         <h2 className="about-section-title">The Hidden Cost of LLM-Based Verification</h2>
@@ -215,6 +217,8 @@ export default function About() {
           output a fallback verdict — no extra API round-trip, no added token cost per turn.
         </p>
       </section>
+
+      <div className="about-divider" />
 
       <section className="about-section">
         <span className="about-section-label">Impact</span>
